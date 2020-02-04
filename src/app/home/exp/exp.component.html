@@ -1,0 +1,161 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<style>
+    @page {
+        /* dimensions for the whole page */
+        size: A5;
+        margin: 0;
+    }
+    
+    html {
+        /* off-white, so body edge is visible in browser */
+        background: #eee;
+    }
+    
+    .card {
+        /* A5 dimensions */
+        height: 210mm;
+        width: 148.5mm;
+        margin: 0;
+    }
+    
+    #img img {
+        height: 21.17mm;
+        width: 85.85mm;
+        margin-left: 30.4mm;
+        margin-right: 31.75mm;
+        margin-bottom: 3.27mm;
+    }
+    
+    #yellowArea {
+        background-color: yellow;
+        width: 145.12mm;
+        height: 17.1mm;
+        margin-bottom: 2.96mm;
+    }
+    
+    .carcteristique {
+        padding-top: 2.5mm;
+        height: 9.43mm;
+        /*
+		border: 1px;
+		border-style: dashed;
+*/
+    }
+    
+    .infoArticle {
+        height: 7.36mm;
+    }
+    
+    .blueArea {
+        height: 20.83mm;
+        width: 144.86mm;
+        background-color: blue;
+        margin-bottom: 3.15mm;
+    }
+    
+    #yellowArea2 {
+        background-color: yellow;
+        width: 144.61mm;
+        height: 23.88mm;
+    }
+    
+    label {
+        margin-left: 9.59mm;
+        font-size: 11pt;
+        height: 50px;
+        line-height: 8mm;
+    }
+    
+    table td {
+        width: 30.05mm;
+        text-align: center;
+        border-style: solid;
+        border: 0.5mm;
+    }
+    
+    table tr {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div style="margin:1.41mm">
+        <div id="imp" class="card">
+            <div id="img"><img src="C:\Users\dell\Desktop\logho.png"></div>
+
+
+            <div style=" height: 21.51mm;width: 148.5mm; background-color: green">
+
+                <div class="infoArticle"><label>Référence</label></div>
+                <div class="infoArticle"><label>Désignation</label></div>
+            </div>
+            <div id="yellowArea"></div>
+            <div style="height: 8.47mm;width: 142.07mm; background-color: pink;margin-top: 2.96mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height:8.47mm;width: 142.07mm; background-color: pink;margin-top: 2.96mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height: 8.47mm;width: 142.07mm; background-color: pink;margin-top: 3.22mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height: 8.47mm;width: 142.07mm; background-color: pink;margin-top: 3.47mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height: 8.47mm;width: 142.07mm; background-color: pink;margin-top: 3.22mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height: 8.47mm;width: 142.07mm; background-color: pink;margin-top: 2.96mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height:8.47mm;width: 142.07mm; background-color: pink;margin-top: 3.22mm; margin-left: 2.96mm"><label>Référence</label></div>
+            <div style="height: 8.47mm;width: 142.07mm; background-color: pink;margin-top: 3.47mm; margin-left: 2.96mm"><label>Référence</label></div>
+
+
+
+
+
+            <div class="blueArea">
+                <div style="height: 23.88mm;width: 69.75mm;float: left;margin-top: 4.15mm">
+
+                </div>
+                <div style="height: 23.88mm;width: 71.75mm;float: left;margin-top: 5.15mm;margin-left: 3.35mm">
+                    <div style="float: left;width: 45mm;font-weight:bold;font-size: 32.5pt"><a style="font-weight:bold;font-size: 28.5pt;margin-left: 7mm">2000.000</a></div>
+                    <div style="float: left;margin-top:5mm "><a style="font-weight:bold;font-size: 20.5pt;margin-left: 2mm">Dt</a></div>
+                </div>
+            </div>
+
+
+            <div id="yellowArea2">
+
+                <div style="height: 23.88mm;width: 69.75mm;float: left;">
+                    <div style="height: 5mm;width: 69.7mm;"> <label>Ref:0105258</label></div>
+                    <div style="height: 15.9mm;width: 69.7mm;font-weight:bold;"><label>SAMS FRG RT31 400LITRE NO FROST BLANC 4G SMART</label> </div>
+                </div>
+                <div style=" height: 23.88mm;width: 69.75mm;float: left;">
+                    <table style="margin-bottom: 8mm">
+                        <tr>
+                            <td>12 Mois</td>
+                            <td>10.100DT</td>
+                        </tr>
+                        <tr>
+                            <td>24 Mois</td>
+                            <td>10.100DT</td>
+                        </tr>
+                        <tr>
+                            <td>36 Mois</td>
+                            <td>10.100DT</td>
+                        </tr>
+
+
+
+                    </table>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    function imprimer(imp) {
+        let printContents = document.getElementById(imp).innerHTML;
+        let originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+</script>

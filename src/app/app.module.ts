@@ -10,6 +10,8 @@ import { TicketMachineAlaveComponent } from './home/ticket-machine-alave/ticket-
 import { TicketTvComponent } from './home/ticket-tv/ticket-tv.component';
 import { TicketNormalComponent } from './home/ticket-normal/ticket-normal.component';
 import { MiniTicketComponent } from './home/mini-ticket/mini-ticket.component';
+import { NgForm } from '@angular/forms';
+import { ExpComponent } from './home/exp/exp.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MiniTicketComponent } from './home/mini-ticket/mini-ticket.component';
     TicketMachineAlaveComponent,
     TicketTvComponent,
     TicketNormalComponent,
-    MiniTicketComponent
+    MiniTicketComponent,
+    NgForm,
+    ExpComponent
   ],
   imports: [
     BrowserModule,

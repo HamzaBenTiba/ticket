@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ticket';
+  loadedChoix='ticket';
+  onNavigate(choix:string){
+    this.loadedChoix=choix;
+
+  }
 }

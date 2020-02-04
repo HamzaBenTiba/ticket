@@ -1,1 +1,97 @@
-<p>ticket-frigidaire works!</p>
+<app-side-bar></app-side-bar>
+<!--  -->
+<form class="form-horizontal" (ngSubmit)="print(f)" #f="ngForm">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="Reference">Réference:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Ref" name="Ref" ngModel placeholder="REference">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">Désignation:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="des" name="des" ngModel placeholder="Designation">
+        </div>
+    </div>
+    <hr color="blue">
+
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">CLASSE ENERGITIQUE:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="CE" name="CE" ngModel placeholder="CLASSE ENERGITIQUE">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">DIMENSIONS:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Dim" name="Dim" ngModel placeholder="DIMENSIONS">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">GARANTIE:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Garantie" ngModel name="Garantie" placeholder="GARANTIE">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">TYPE FROIS:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="TypeFrois" ngModel name="TypeFrois" placeholder="TYPE FROIS">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">VOLUME CONGELATEUR:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="VolCong" name="VolCong" ngModel placeholder="VOLUME CONGELATEUR">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">VOLUME REFRIGERATEUR:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="VolRefrig" name="VolRefrig" ngModel placeholder="VOLUME REFRIGERATEUR">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">CONSOMATION KWH/AN:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Cons" name="Cons" ngModel placeholder="CONSOMATION KWH/AN">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">NOMBRE DE CLAYETTES:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="NbrClay" name="NbrClay" ngModel placeholder="NOMBRE DE CLAYETTES">
+        </div>
+    </div>
+    <hr color="blue">
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">PRIX COMPTANT:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="PrixConptant" name="PrixConptant" ngModel placeholder="PRIX">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="des">Vente a Crédit:</label>
+        <div class="row">
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="Prix12" name="Prix12" ngModel placeholder="Prix sur 12Mois">
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="Prix24" name="Prix24" ngModel placeholder="Prix sur 24Mois">
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="prix36" name="prix36" ngModel placeholder="Prix sur 36Mois">
+            </div>
+        </div>
+    </div>
+    <hr color="blue">
+    <div class="form-group">
+        <div class="col-sm-10">
+            <button type="submit">Valider</button>
+        </div>
+    </div>
+
+
+</form>
